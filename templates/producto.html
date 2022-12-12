@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+
+<div class="camisa">
+    <h2>Vue JS</h2>
+    <img class="camisa__imagen" src="/static/img/1.jpg" alt="Imagen del Producto">
+
+    <div class="camisa__texto">
+        <p>Mauris hendrerit metus et diam egestas, eget tristique mi vehicula. Praesent eget metus tellus. 
+           Praesent consequat lectus id quam consectetur semper. Pellentesque dapibus tristique dolor eu ornare. 
+           Mauris mattis turpis ligula, vel cursus sapien interdum sit amet.</p>
+
+           <form action="" class="formulario">
+                <select class="formulario__campo">
+                    <option disabled selected value="">-- Seleccionar Talla --</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                    <option value="">XL</option>
+                </select>
+                <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                <input class="formulario__submit" type="submit" value="Agregar al carrito">
+           </form>
+    </div>
+</div>
+
+
+
+{% include 'footer.html' %}

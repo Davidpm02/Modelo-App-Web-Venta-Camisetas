@@ -19,10 +19,14 @@ Se ha incluido una seccion 'Almacen' que contiene un CRUD para modificar los dat
 asi como crear camisetas nuevas.
 
 
+<br>
+<br>
+<br>
+<br>
+<h2>----- Futuros Commit's -----</h2>
 
-<h2> Futuros Commit's </h2>
   - Se puede mejorar el estilo del CRUD de la seccion 'Almacen'.
-  
+   
   - Se puede incluir un carrito de compras que modifique el valor de 'Stock' de las camisetas en la base de datos.
   
   - Se puede incluir un formulario de registro, o crear una pagina de bienvenida con alguna animacion.

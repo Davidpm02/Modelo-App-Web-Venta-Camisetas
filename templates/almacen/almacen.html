@@ -1,0 +1,39 @@
+{% include 'almacen/header_almacen.html' %}
+
+    <main>
+        <section>
+            <button>
+                <a href="/crearCamiseta">Agregar camiseta nueva</a>
+            </button>
+        </section>
+
+        <table class="table table-light">
+            <thead class="thead-light">
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for producto in productos %}
+                
+                <tr>
+                    <td>{{producto[0] }}</td>
+                    <td>{{producto[1] }}</td>
+                    <td>{{producto[2] }}</td>
+                    <td>{{producto[3] }}</td>
+                    <td> <a href="/modificarCamiseta/{{producto[0]}}">Editar</a> | 
+                         <a href="/eliminarCamiseta/{{producto[0]}}">Eliminar</a>
+                    </td>
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+        </table>
+    </main>
+
+{% include 'almacen/footer_almacen.html' %}

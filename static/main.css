@@ -93,9 +93,21 @@ h3 {
     text-transform: uppercase;
     font-weight: bold;
 }
+.navegacion__enlace2 {
+    font-family: var(--fuentePpal);
+    color: var(--blanco);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 12rem;
+}
 .navegacion__enlace--activo,
 .navegacion__enlace:hover {
     color: var(--secundario);
+}
+
+.navegacion__enlace--activo--especial {
+    color: grey;
 }
 
 /** Grid **/
@@ -267,3 +279,5 @@ h3 {
     cursor: pointer;
     background-color: var(--primarioOscuro);
 }
+
+

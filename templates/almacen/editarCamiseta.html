@@ -1,30 +1,78 @@
-{% include 'almacen/header_almacen.html' %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisetas Frontend Store</title>
+    <link rel="stylesheet" href="static/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="header__logo">
+            <img src="../static/img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+    
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="/pagina_tienda">Tienda</a>
+        <a class="navegacion__enlace" href="/pagina_nosotros">Nosotros</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="#">Almacen</a>
+    </nav>
 
-    <button>
-        <a href="/almacen">Volver</a>
-    </button>
+    <section class="seccion_volver">
+        <button class="seccion_volver__boton">
+            <a class="seccion_volver__boton__texto" href="/almacen">Volver</a>
+        </button>
+    </section>
 
     <main>
 
         {% for item in producto %}
-            
-            <form method="post" action="/actualizarCamiseta" enctype="multipart/form-data">
+        <section class="frame_crearCamiseta"> 
+            <form class="frame_crearCamiseta__formulario" method="post" action="/actualizarCamiseta" enctype="multipart/form-data">
                 
-                ID:
-                <input type="text" value="{{item[0]}}" name="txtID" id="txtID">
-                Nombre:
-                <input type="text" value="{{item[1]}}" name="txtNombre" id="txtNombre">
+                <div class="frame_crearCamiseta__formulario__id">
+                    ID:
+                    <input type="text" value="{{item[0]}}" name="txtID" id="txtID">
+                </div>
                 <br>
-                Precio:
-                <input type="number" value="{{item[2]}}" name="txtPrecio" id="txtPrecio">
+
+                <div class="frame_crearCamiseta__formulario__nombre">
+                    Nombre:
+                    <input type="text" value="{{item[1]}}" name="txtNombre" id="txtNombre">
+                </div>
                 <br>
-                Stock:
-                <input type="number" value="{{item[3]}}" name="txtStock" id="txtStock">
+                
+                <div class="frame_crearCamiseta__formulario__precio">
+                    Precio:
+                    <input type="number" value="{{item[2]}}" name="txtPrecio" id="txtPrecio">
+                </div>
+                <br>
+                
+
+                <div class="frame_crearCamiseta__formulario__stock">
+                    Stock:
+                    <input type="number" value="{{item[3]}}" name="txtStock" id="txtStock">
+                </div>
                 <br>
                 <br>
-                <input type="submit" value="Agregar">
+                <div class="frame_crearCamiseta__formulario__submit">
+                    <input class="frame_crearCamiseta__formulario__submit__texto" type="submit" value="Editar">
+                </div>
+
             </form>
+        </section>
         {% endfor %}
     </main>
 
-{% include 'almacen/footer_almacen.html' %}
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos reservados 2022.</p>
+    </footer>
+
+</body>
+</html>

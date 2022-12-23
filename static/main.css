@@ -281,3 +281,127 @@ h3 {
 }
 
 
+/** ALMACEN **/
+
+.boton_crearCamiseta {
+    display: flex;
+    padding: 2rem;
+}
+.boton_crearCamiseta__boton {
+    border: none;
+    background-color: var(--secundario);
+    padding: 1.1rem;
+    border-radius: 0.9rem;
+    border: 2px solid var(--negro);
+}
+.boton_crearCamiseta__boton a {
+    color: var(--negro);
+    font-weight: bold;
+    font-family: var(--fuentePpal);
+}
+.boton_crearCamiseta__boton__texto:hover {
+    color: var(--primarioOscuro);
+}
+.tabla_almacen {
+    display: flex;
+    justify-content: center;
+    padding: 0 10rem;
+}
+.tabla_almacen__tabla{
+    margin: 0 auto;
+}
+.tabla_almacen__contenido__titulo__id {
+    text-align: left;
+}
+.tabla_almacen__contenido__id {
+    margin-left: 5rem;
+}
+.tabla_almacen__contenido__nombre {
+    font-weight: bold;
+    font-family: var(--fuentePpal);
+}
+.tabla_almacen__contenido__precio {
+    font-weight: bold;
+    font-family: var(--fuentePpal);
+}
+.tabla_almacen__contenido__stock {
+    font-family: var(--fuentePpal);
+
+}
+.tabla_almacen__contenido__acciones {
+    font-weight: bold;
+    font-family: var(--fuentePpal);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+
+
+/** ALMACEN ---- CREAR/EDITAR    CAMISETA **/
+
+.frame_crearCamiseta {
+    display: grid;
+}
+.frame_crearCamiseta__formulario {
+    margin: 5rem auto 0 auto;
+    padding: 2rem 5rem;
+    border: 4px solid black;
+    background-color: var(--blanco);
+    border-radius: .8rem;
+
+}
+.frame_crearCamiseta__formulario__id {
+    padding: .5rem;
+    font-weight: bold;
+}
+.frame_crearCamiseta__formulario__nombre {
+    padding: .5rem;
+    font-weight: bold;
+}
+.frame_crearCamiseta__formulario__precio {
+    padding: .5rem;
+    font-weight: bold;
+}
+.frame_crearCamiseta__formulario__stock {
+    padding: .5rem;
+    font-weight: bold;
+}
+.frame_crearCamiseta__formulario__submit__texto {
+    padding: .9rem;
+    border-radius: 0.9rem;
+    border: none;   
+    background-color: var(--secundario);
+    margin-left: 8rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--negro);
+    font-family: var(--fuentePpal);
+    text-transform: uppercase;
+
+}
+.frame_crearCamiseta__formulario__submit__texto:hover {
+    cursor: pointer;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.seccion_volver {
+    padding: 1.4rem;
+}
+.seccion_volver__boton {
+    padding: 1.4rem;
+    border: 2px solid var(--negro);
+    background-color: var(--secundario);
+    border-radius: 0.9rem;
+    
+}
+.seccion_volver__boton__texto {
+    font-size: 20px;
+    font-family: var(--fuentePpal);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--negro);
+}
+.seccion_volver__boton__texto:hover {
+    color: var(--primarioOscuro);
+}

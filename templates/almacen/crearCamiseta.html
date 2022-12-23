@@ -1,22 +1,36 @@
 {% include 'almacen/header_almacen.html' %}
+    <section class="seccion_volver">
+        <button class="seccion_volver__boton">
+            <a class="seccion_volver__boton__texto" href="/almacen">Volver</a>
+        </button>
+    </section>
 
-<button>
-    <a href="/almacen">Volver</a>
-</button>
+    <section class="frame_crearCamiseta">
+        <form class="frame_crearCamiseta__formulario" method="post" action="/almacenarCamiseta" enctype="multipart/form-data">
+            
+            <div class="frame_crearCamiseta__formulario__nombre">
+                Nombre:
+                <input type="text" name="txtNombre" id="txtNombre">
+            </div>
+            <br>
 
-<form method="post" action="/almacenarCamiseta" enctype="multipart/form-data">
-        
-    Nombre:
-    <input type="text" name="txtNombre" id="txtNombre">
-    <br>
-    Precio:
-    <input type="number" name="txtPrecio" id="txtPrecio">
-    <br>
-    Stock:
-    <input type="number" name="txtStock" id="txtStock">
-    <br>
-    <br>
-    <input type="submit" value="Agregar">
-</form>
+            <div class="frame_crearCamiseta__formulario__precio">
+                Precio:
+                <input type="number" name="txtPrecio" id="txtPrecio">
+            </div>
+            <br>
+
+            <div class="frame_crearCamiseta__formulario__stock">
+                Stock:
+                <input type="number" name="txtStock" id="txtStock">
+            </div>
+
+            <br>
+            <br>
+            <div class="frame_crearCamiseta__formulario__submit">
+                <input class="frame_crearCamiseta__formulario__submit__texto" type="submit" value="Agregar">
+            </div>
+        </form>
+    </section>
 
 {% include 'almacen/footer_almacen.html' %}

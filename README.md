@@ -32,6 +32,22 @@ Estos cambios visuales afectan al CRUD de modificacion e insercion de camisetas 
 <br>
 <br>
 <br>
+
+<h2> COMMIT #4 </h2>
+Se ha realizado una mejora de diseno en la seccion 'Info Camiseta', resultante de acceder a cualquier camiseta en el index de la Web.
+
+Estos camibos incluyen:
+
+  - Se ha corregido el error de redireccion al pinchar en el nombre de la seccion (retornaba al index de la Web). Se ha eliminado el atributo href
+  de la seccion, por lo que ahora no se comporta como un enlace.
+  
+  - Se ha incluido una sombra detras de la imagen de cada camiseta en su seccion correspondiente. Este cambio no tiene ningun efecto funcional,
+  simplemente aporta algo de profundidad a la pagina.
+<br>
+<br>
+<br>
+<br>
+  
 <h2>----- Futuros Commit's -----</h2>
 
    
@@ -43,6 +59,4 @@ Estos cambios visuales afectan al CRUD de modificacion e insercion de camisetas 
   - Se puede incluir un formulario de registro, o crear una pagina de bienvenida con alguna animacion.
   
   - Se deberia hacer algun cambio en el HTML para, en caso de querer anadir nuevas camisetas, que estas se vayan incluyendo en la pagina principal.
-  
-  - La seccion 'Info_Camisetas' no debe llevarme a la pagina principal, (solucionar con href="#")
 

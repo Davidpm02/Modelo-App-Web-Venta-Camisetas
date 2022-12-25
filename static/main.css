@@ -405,3 +405,12 @@ h3 {
 .seccion_volver__boton__texto:hover {
     color: var(--primarioOscuro);
 }
+
+
+
+/** SOMBRA **/
+.sombra {
+    -webkit-box-shadow: -34px 13px 97px 11px rgba(0,0,0,0.54);
+    -moz-box-shadow: -34px 13px 97px 11px rgba(0,0,0,0.54);
+    box-shadow: -34px 13px 97px 11px rgba(0,0,0,0.54);
+}
